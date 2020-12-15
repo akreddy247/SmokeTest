@@ -1,12 +1,12 @@
 # Lambda: LL-Yodlee-UpsertProvider
 
-The purpose of this Lambda is perform 2 opertaions:
+The purpose of this Lambda is perform 2 operations:
   1. Add or update the Yodlee Providers.
   2. Get the list of providers by provider name
 
 ## 1. Add or update the Yodlee providers 
 The Lambda expects the following JSON object to add or update the providers.
-  Provide the list of  comma seperated providerId's. It will do an upsert on the providerId
+  Provide the list of  comma separated providerId's. It will do an upsert on the providerId
   
   ### UpsertProviderById
   ```json
@@ -34,8 +34,8 @@ The Lambda expects the following JSON object to get the list of providers by nam
   ```
   
  ## About yodlee_token
- In the above examples yodlee_token is taken from the Yodlee_log_table. Get the token from the request object of the the latest record which doest the getProvider operation. 
+ In the above examples yodlee_token is taken from the Yodlee_log_table. Get the token from the request object of the the latest record which does the getProvider operation. 
  You can create a new yodlee_token by going to the website and selecting a provider. It generates a new yodlee token which you can use for this operation.
  
- You can extend this Lamda function by creating the token directly in this Lamda function
+ You can extend this Lambda function by creating the token directly in this Lambda function
  
